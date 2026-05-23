@@ -1,0 +1,134 @@
+aid: balena
+name: Balena
+description: Balena is a complete platform for building, deploying, and managing fleets of connected Linux devices. The platform
+  combines balenaOS, balenaEngine, balenaCloud, the balena CLI, and the balena SDK so teams can build container-based device
+  images and continuously deliver them to devices in the field. The balenaCloud REST API exposes device, fleet, release, and
+  organization management using OData-style queries.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/balena/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+type: Index
+access: 3rd-Party
+tags:
+- Containers
+- Device Management
+- Edge
+- Embedded Linux
+- Fleet Management
+- IoT
+- OTA
+- Provisioning
+- Releases
+apis:
+- aid: balena:balena-cloud-api
+  name: Balena Cloud API
+  description: The balenaCloud REST API is the primary interface to the balena platform. It exposes resources for devices,
+    fleets (applications), releases, environment variables, organizations, and user accounts with bearer-token authentication
+    and OData-style filtering, field selection, and resource expansion.
+  humanURL: https://docs.balena.io/reference/api/overview/
+  baseURL: https://api.balena-cloud.com/v7
+  tags:
+  - Device Management
+  - Fleet Management
+  - OData
+  - Releases
+  properties:
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/overview/
+  - type: Authentication
+    url: https://docs.balena.io/reference/api/overview/#authentication
+- aid: balena:balena-devices-api
+  name: Balena Devices API
+  description: Provision, inspect, configure, and remove devices in balenaCloud, including environment variables, tags, status,
+    and OS information.
+  humanURL: https://docs.balena.io/reference/api/resources/device/
+  baseURL: https://api.balena-cloud.com/v7
+  tags:
+  - Devices
+  - Provisioning
+  properties:
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/resources/device/
+- aid: balena:balena-fleets-api
+  name: Balena Fleets (Applications) API
+  description: Manage balena fleets, formerly known as applications, that group devices and releases for deployment.
+  humanURL: https://docs.balena.io/reference/api/resources/application/
+  baseURL: https://api.balena-cloud.com/v7
+  tags:
+  - Applications
+  - Fleet Management
+  properties:
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/resources/application/
+- aid: balena:balena-releases-api
+  name: Balena Releases API
+  description: Manage container-based releases and their assets, pinning, and rollout across a fleet.
+  humanURL: https://docs.balena.io/reference/api/resources/release/
+  baseURL: https://api.balena-cloud.com/v7
+  tags:
+  - OTA
+  - Releases
+  properties:
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/resources/release/
+- aid: balena:balena-supervisor-api
+  name: Balena Supervisor API
+  description: On-device REST API exposed by balena Supervisor for local control of containers, application state, host configuration,
+    reboot, shutdown, and update checks.
+  humanURL: https://docs.balena.io/reference/supervisor/supervisor-api/
+  baseURL: http://127.0.0.1
+  tags:
+  - Devices
+  - Local API
+  - Supervisor
+  properties:
+  - type: Documentation
+    url: https://docs.balena.io/reference/supervisor/supervisor-api/
+common:
+- type: Website
+  url: https://www.balena.io/
+- type: Developer
+  url: https://docs.balena.io/
+- type: Documentation
+  url: https://docs.balena.io/reference/api/overview/
+- type: SDK
+  url: https://github.com/balena-io/balena-sdk
+- type: CLI
+  url: https://github.com/balena-io/balena-cli
+- type: GitHub
+  url: https://github.com/balena-io
+- type: Blog
+  url: https://blog.balena.io/
+- type: Pricing
+  url: https://www.balena.io/pricing
+- type: StatusPage
+  url: https://status.balena.io/
+- type: Support
+  url: https://www.balena.io/support
+- type: Community
+  url: https://forums.balena.io/
+- type: PrivacyPolicy
+  url: https://www.balena.io/privacy-policy
+- type: TermsOfService
+  url: https://www.balena.io/terms-of-service
+- type: LinkedIn
+  url: https://www.linkedin.com/company/balena-io/
+- type: ChangeLog
+  url: https://github.com/balena-io/balena-cli/blob/master/CHANGELOG.md
+- type: Integrations
+  url: https://www.balena.io/partners
+integrations:
+- name: AWS
+- name: Microsoft Azure
+- name: Google Cloud
+- name: Memfault
+- name: Docker
+- name: GitHub Actions
+- name: Raspberry Pi
+- name: NVIDIA Jetson
+- name: Intel
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
