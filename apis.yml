@@ -119,6 +119,8 @@ common:
   url: https://github.com/balena-io/balena-cli/blob/master/CHANGELOG.md
 - type: Integrations
   url: https://www.balena.io/partners
+- type: LLMsTxt
+  url: https://docs.balena.io/llms.txt
 integrations:
 - name: AWS
 - name: Microsoft Azure
