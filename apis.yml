@@ -4,7 +4,7 @@ description: Balena is a complete platform for building, deploying, and managing
   combines balenaOS, balenaEngine, balenaCloud, the balena CLI, and the balena SDK so teams can build container-based device
   images and continuously deliver them to devices in the field. The balenaCloud REST API exposes device, fleet, release, and
   organization management using OData-style queries.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/balena/refs/heads/main/apis.yml
 created: '2026-05-23'
 modified: '2026-05-23'
