@@ -93,7 +93,7 @@ common:
   url: https://docs.balena.io/
 - type: Documentation
   url: https://docs.balena.io/reference/api/overview/
-- type: SDK
+- type: SDKs
   url: https://github.com/balena-io/balena-sdk
 - type: CLI
   url: https://github.com/balena-io/balena-cli
@@ -119,7 +119,7 @@ common:
   url: https://github.com/balena-io/balena-cli/blob/master/CHANGELOG.md
 - type: Integrations
   url: https://www.balena.io/partners
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.balena.io/llms.txt
 integrations:
 - name: AWS
