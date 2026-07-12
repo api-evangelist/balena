@@ -1,0 +1,40 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.balena.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 12 21:13:07 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.balena.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 30 04:50:17 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.balena-cloud.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 16 21:26:56 2026 GMT
+  hsts: null
+domains:
+- domain: balena.io
+  dnssec: false
+  caa:
+  - 0 issuewild "pki.goog; cansignhttpexchanges=yes"
+  - 0 issuewild "ssl.com"
+  - 0 issue "amazon.com"
+  - 0 issue "amazonaws.com"
+  - 0 issue "amazontrust.com"
+  - 0 issue "awstrust.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: balena-cloud.com
+  dnssec: true
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: reject
