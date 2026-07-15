@@ -87,6 +87,8 @@ apis:
   - type: Documentation
     url: https://docs.balena.io/reference/supervisor/supervisor-api/
 common:
+- type: AgenticAccess
+  url: agentic-access/balena-agentic-access.yml
 - type: TrustCenter
   url: security/balena-trust-center.yml
 - type: VulnerabilityDisclosure
