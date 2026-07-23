@@ -1,0 +1,94 @@
+openapi: 3.1.0
+info:
+  title: Balena Cloud Applications Device Tags API
+  version: v7
+  description: 'The balenaCloud REST API is the primary interface to the Balena platform.
+
+    It exposes OData-style resources for devices, fleets (applications), releases,
+
+    environment variables, organizations, and user accounts. Authentication uses a
+
+    bearer token (session token or named API key) supplied in the
+
+    `Authorization: Bearer <token>` header. Backward-compatible paths for v1-v6
+
+    are translated to the newest version.
+
+    '
+  contact:
+    name: balenaCloud
+    url: https://docs.balena.io/reference/api/overview/
+servers:
+- url: https://api.balena-cloud.com/v7
+  description: balenaCloud v7
+- url: https://api.balena-cloud.com/v6
+  description: balenaCloud v6 (backward-compatible)
+tags:
+- name: Device Tags
+  description: Tags associated with devices
+paths:
+  /device_tag:
+    get:
+      summary: List device tags
+      operationId: listDeviceTags
+      tags:
+      - Device Tags
+      parameters:
+      - in: query
+        name: $filter
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A page of device tags
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  d:
+                    type: array
+                    items:
+                      type: object
+      security:
+      - bearer: []
+    post:
+      summary: Create a device tag
+      operationId: createDeviceTag
+      tags:
+      - Device Tags
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - device
+              - tag_key
+              - value
+              properties:
+                device:
+                  type: integer
+                tag_key:
+                  type: string
+                value:
+                  type: string
+      responses:
+        '201':
+          description: Created
+      security:
+      - bearer: []
+components:
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: 'Session token or named API key supplied as
+
+        `Authorization: Bearer <token>`. Create named API keys at
+
+        https://dashboard.balena-cloud.com/preferences/access-tokens.
+
+        '
