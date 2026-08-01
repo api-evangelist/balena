@@ -1,0 +1,20 @@
+{
+  "provider": "balena",
+  "sources": [
+    "balena-applications-api-openapi.yml",
+    "balena-device-tags-api-openapi.yml",
+    "balena-devices-api-openapi.yml",
+    "balena-releases-api-openapi.yml"
+  ],
+  "outputs": [
+    "balena-applications-api-openapi.yml",
+    "balena-device-tags-api-openapi.yml",
+    "balena-devices-api-openapi.yml",
+    "balena-releases-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
