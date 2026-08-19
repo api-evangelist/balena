@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Balena Cloud Applications Device Tags API",
+    "version": "v7"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Device Tags",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List device tags",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.balena-cloud.com/v7/device_tag",
+            "params": [
+              {
+                "name": "$filter",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "auth": {
+              "type": "bearer",
+              "token": "{{bearerToken}}"
+            }
+          },
+          "docs": "List device tags"
+        },
+        {
+          "info": {
+            "name": "Create a device tag",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.balena-cloud.com/v7/device_tag",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            },
+            "auth": {
+              "type": "bearer",
+              "token": "{{bearerToken}}"
+            }
+          },
+          "docs": "Create a device tag"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
