@@ -73,6 +73,9 @@ apis:
   humanURL: https://docs.balena.io/reference/api/resources/application/
   baseURL: https://api.balena-cloud.com/v7
   tags:
+  - Application
+  - Fleet Management
+  tags_raw:
   - Applications
   - Fleet Management
   properties:
@@ -109,6 +112,8 @@ apis:
   humanURL: https://docs.balena.io/reference/api/overview/
   baseURL: https://api.balena-cloud.com/v7
   tags:
+  - Application
+  tags_raw:
   - Applications
   properties:
   - type: OpenAPI
