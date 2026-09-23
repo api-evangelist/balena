@@ -1,10 +1,7 @@
 {
   "provider": "balena",
   "sources": [
-    "balena-applications-api-openapi.yml",
-    "balena-device-tags-api-openapi.yml",
-    "balena-devices-api-openapi.yml",
-    "balena-releases-api-openapi.yml"
+    "_original/balena-openapi.yml"
   ],
   "outputs": [
     "balena-applications-api-openapi.yml",
@@ -15,6 +12,15 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "balena-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "balena-applications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "balena-device-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "balena-devices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "balena-releases-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

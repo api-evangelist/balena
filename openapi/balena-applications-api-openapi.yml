@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: Balena Cloud Applications API
   version: v7
@@ -10,11 +10,9 @@ info:
 
     bearer token (session token or named API key) supplied in the
 
-    `Authorization: Bearer <token>` header. Backward-compatible paths for v1-v6
+    `Authorization: Bearer ` header. Backward-compatible paths for v1-v6
 
-    are translated to the newest version.
-
-    '
+    are translated to the newest version.'
   contact:
     name: balenaCloud
     url: https://docs.balena.io/reference/api/overview/

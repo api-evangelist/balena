@@ -1,6 +1,6 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Balena Cloud Applications Devices API
+  title: Balena Cloud Devices API
   version: v7
   description: 'The balenaCloud REST API is the primary interface to the Balena platform.
 
@@ -10,11 +10,9 @@ info:
 
     bearer token (session token or named API key) supplied in the
 
-    `Authorization: Bearer <token>` header. Backward-compatible paths for v1-v6
+    `Authorization: Bearer ` header. Backward-compatible paths for v1-v6
 
-    are translated to the newest version.
-
-    '
+    are translated to the newest version.'
   contact:
     name: balenaCloud
     url: https://docs.balena.io/reference/api/overview/
@@ -32,9 +30,7 @@ paths:
       summary: List devices
       description: 'List devices using OData-style queries. Supports `$select`, `$filter`,
 
-        `$expand`, `$top`, `$skip`, and `$orderby`.
-
-        '
+        `$expand`, `$top`, `$skip`, and `$orderby`.'
       operationId: listDevices
       tags:
       - Devices
@@ -155,13 +151,6 @@ paths:
       - bearer: []
 components:
   schemas:
-    DeviceList:
-      type: object
-      properties:
-        d:
-          type: array
-          items:
-            $ref: '#/components/schemas/Device'
     Device:
       type: object
       properties:
@@ -186,6 +175,13 @@ components:
         created_at:
           type: string
           format: date-time
+    DeviceList:
+      type: object
+      properties:
+        d:
+          type: array
+          items:
+            $ref: '#/components/schemas/Device'
   securitySchemes:
     bearer:
       type: http
