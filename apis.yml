@@ -69,19 +69,6 @@ apis:
     url: https://docs.balena.io/reference/api/overview/
   - type: Authentication
     url: https://docs.balena.io/reference/api/overview/#authentication
-- aid: balena:balena-devices-api
-  name: Balena Devices API
-  description: >-
-    Provision, inspect, configure, and remove devices in balenaCloud, including environment variables,
-    tags, status, and OS information.
-  humanURL: https://docs.balena.io/reference/api/resources/device/
-  baseURL: https://api.balena-cloud.com/v7
-  tags:
-  - Devices
-  - Provisioning
-  properties:
-  - type: Documentation
-    url: https://docs.balena.io/reference/api/resources/device/
 - aid: balena:balena-fleets-api
   name: Balena Fleets (Applications) API
   description: >-
@@ -97,17 +84,6 @@ apis:
   properties:
   - type: Documentation
     url: https://docs.balena.io/reference/api/resources/application/
-- aid: balena:balena-releases-api
-  name: Balena Releases API
-  description: Manage container-based releases and their assets, pinning, and rollout across a fleet.
-  humanURL: https://docs.balena.io/reference/api/resources/release/
-  baseURL: https://api.balena-cloud.com/v7
-  tags:
-  - OTA
-  - Releases
-  properties:
-  - type: Documentation
-    url: https://docs.balena.io/reference/api/resources/release/
 - aid: balena:balena-supervisor-api
   name: Balena Supervisor API
   description: >-
@@ -146,24 +122,31 @@ apis:
     url: openapi/balena-device-tags-api-openapi.yml
 - aid: balena:balena-devices-api
   name: Balena Devices API
-  description: IoT devices managed by balena
-  humanURL: https://docs.balena.io/reference/api/overview/
+  description: Provision, inspect, configure, and remove devices in balenaCloud, including environment variables,
+    tags, status, and OS information.
+  humanURL: https://docs.balena.io/reference/api/resources/device/
   baseURL: https://api.balena-cloud.com/v7
   tags:
   - Devices
+  - Provisioning
   properties:
   - type: OpenAPI
     url: openapi/balena-devices-api-openapi.yml
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/resources/device/
 - aid: balena:balena-releases-api
   name: Balena Releases API
-  description: Container image releases
-  humanURL: https://docs.balena.io/reference/api/overview/
+  description: Manage container-based releases and their assets, pinning, and rollout across a fleet.
+  humanURL: https://docs.balena.io/reference/api/resources/release/
   baseURL: https://api.balena-cloud.com/v7
   tags:
   - Releases
+  - OTA
   properties:
   - type: OpenAPI
     url: openapi/balena-releases-api-openapi.yml
+  - type: Documentation
+    url: https://docs.balena.io/reference/api/resources/release/
 common:
 - type: AgenticAccess
   url: agentic-access/balena-agentic-access.yml
