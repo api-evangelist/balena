@@ -151,6 +151,13 @@ paths:
       - bearer: []
 components:
   schemas:
+    DeviceList:
+      type: object
+      properties:
+        d:
+          type: array
+          items:
+            $ref: '#/components/schemas/Device'
     Device:
       type: object
       properties:
@@ -175,13 +182,6 @@ components:
         created_at:
           type: string
           format: date-time
-    DeviceList:
-      type: object
-      properties:
-        d:
-          type: array
-          items:
-            $ref: '#/components/schemas/Device'
   securitySchemes:
     bearer:
       type: http
