@@ -1,4 +1,4 @@
-# Balena (balena)
+# Balena
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,147 +66,134 @@
 
 Balena is a complete platform for building, deploying, and managing fleets of connected Linux devices. The platform combines balenaOS, balenaEngine, balenaCloud, the balena CLI, and the balena SDK so teams can build container-based device images and continuously deliver them to devices in the field. The balenaCloud REST API exposes device, fleet, release, and organization management using OData-style queries.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/balena/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/balena/refs/heads/main/apis.yml)
+**Areas:** Containers · Device Management · Edge · Embedded Linux · Fleet Management · IoT · OTA · Provisioning · Releases
 
-## Scope
+## Balena on APIs.io
 
-- **Type:** Index
-- **Access:** 3rd-Party
+Everything profiled for Balena is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/balena/](https://apis.io/providers/balena/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- Containers
-- Device Management
-- Edge
-- Embedded Linux
-- Fleet Management
-- IoT
-- OTA
-- Provisioning
-- Releases
+- [Balena Cloud API](https://apis.io/apis/balena/balena-cloud-api/) — The balenaCloud REST API is the primary interface to the balena platform. It exposes resources for devices, fleets (applications), releases, environment…
+- [Balena Fleets (Applications) API](https://apis.io/apis/balena/balena-fleets-api/) — Manage balena fleets, formerly known as applications, that group devices and releases for deployment.
+- [Balena Supervisor API](https://apis.io/apis/balena/balena-supervisor-api/) — On-device REST API exposed by balena Supervisor for local control of containers, application state, host configuration, reboot, shutdown, and update checks.
+- [Balena Applications API](https://apis.io/apis/balena/balena-applications-api/) — Fleets (applications)
+- [Balena Device Tags API](https://apis.io/apis/balena/balena-device-tags-api/) — Tags associated with devices
+- [Balena Devices API](https://apis.io/apis/balena/balena-devices-api/) — Provision, inspect, configure, and remove devices in balenaCloud, including environment variables, tags, status, and OS information.
+- [Balena Releases API](https://apis.io/apis/balena/balena-releases-api/) — Manage container-based releases and their assets, pinning, and rollout across a fleet.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Balena Cloud API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The balenaCloud REST API is the primary interface to the balena platform. It exposes resources for devices, fleets (applications), releases, environment variables, organizations, and user accounts with bearer-token authentication and OData-style filtering, field selection, and resource expansion.
+- [Balena Agentic Access](https://apis.io/agentic-access/balena/balena-agentic-access/)
 
-- **Human URL:** [https://docs.balena.io/reference/api/overview/](https://docs.balena.io/reference/api/overview/)
-- **Base URL:** `https://api.balena-cloud.com/v7`
+#### Collections (5)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Device Management
-- Fleet Management
-- OData
-- Releases
+- [Balena Cloud API](https://apis.io/collections/balena/open-balena/)
+- [Balena Cloud Applications API](https://apis.io/collections/balena/open-balena-applications-api/)
+- [Balena Cloud Applications Device Tags API](https://apis.io/collections/balena/open-balena-device-tags-api/)
+- [Balena Cloud Applications Devices API](https://apis.io/collections/balena/open-balena-devices-api/)
+- [Balena Cloud Applications Releases API](https://apis.io/collections/balena/open-balena-releases-api/)
 
-#### Properties
+#### Security (4)
 
-- [Documentation](https://docs.balena.io/reference/api/overview/)
-- [Authentication](https://docs.balena.io/reference/api/overview/#authentication)
-- [Postman Collection](collections/balena.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/balena.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Balena Devices API
+- [Balena Authentication](https://apis.io/security/balena/balena-authentication/)
+- [Balena Domain Security](https://apis.io/security/balena/balena-domain-security/)
+- [Balena Trust Center](https://apis.io/security/balena/balena-trust-center/)
+- [Balena Vulnerability Disclosure](https://apis.io/security/balena/balena-vulnerability-disclosure/)
 
-Provision, inspect, configure, and remove devices in balenaCloud, including environment variables, tags, status, and OS information.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://docs.balena.io/reference/api/resources/device/](https://docs.balena.io/reference/api/resources/device/)
-- **Base URL:** `https://api.balena-cloud.com/v7`
+Published plans, tiers and prices.
 
-#### Tags
+- [Balena Plans Pricing](https://apis.io/plans/balena/balena-plans-pricing/)
 
-- Devices
-- Provisioning
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://docs.balena.io/reference/api/resources/device/)
-- [Postman Collection](collections/balena.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/balena.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Balena Rate Limits](https://apis.io/rate-limits/balena/balena-rate-limits/)
 
-### Balena Fleets (Applications) API
+#### FinOps (1)
 
-Manage balena fleets, formerly known as applications, that group devices and releases for deployment.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://docs.balena.io/reference/api/resources/application/](https://docs.balena.io/reference/api/resources/application/)
-- **Base URL:** `https://api.balena-cloud.com/v7`
+- [Balena Finops](https://apis.io/finops/balena/balena-finops/)
 
-#### Tags
+## Where to find this API
 
-- Applications
-- Fleet Management
-
-#### Properties
-
-- [Documentation](https://docs.balena.io/reference/api/resources/application/)
-- [Postman Collection](collections/balena.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/balena.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Balena Releases API
-
-Manage container-based releases and their assets, pinning, and rollout across a fleet.
-
-- **Human URL:** [https://docs.balena.io/reference/api/resources/release/](https://docs.balena.io/reference/api/resources/release/)
-- **Base URL:** `https://api.balena-cloud.com/v7`
-
-#### Tags
-
-- OTA
-- Releases
-
-#### Properties
-
-- [Documentation](https://docs.balena.io/reference/api/resources/release/)
-- [Postman Collection](collections/balena.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/balena.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Balena Supervisor API
-
-On-device REST API exposed by balena Supervisor for local control of containers, application state, host configuration, reboot, shutdown, and update checks.
-
-- **Human URL:** [https://docs.balena.io/reference/supervisor/supervisor-api/](https://docs.balena.io/reference/supervisor/supervisor-api/)
-- **Base URL:** `http://127.0.0.1`
-
-#### Tags
-
-- Devices
-- Local API
-- Supervisor
-
-#### Properties
-
-- [Documentation](https://docs.balena.io/reference/supervisor/supervisor-api/)
-- [Postman Collection](collections/balena.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/balena.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.balena.io/)
-- [Developer](https://docs.balena.io/)
 - [Documentation](https://docs.balena.io/reference/api/overview/)
-- [SDK](https://github.com/balena-io/balena-sdk)
-- [C L I](https://github.com/balena-io/balena-cli)
-- [Git Hub](https://github.com/balena-io)
-- [Blog](https://blog.balena.io/)
 - [Pricing](https://www.balena.io/pricing)
-- [Status Page](https://status.balena.io/)
 - [Support](https://www.balena.io/support)
-- [Community](https://forums.balena.io/)
-- [Privacy Policy](https://www.balena.io/privacy-policy)
-- [Terms of Service](https://www.balena.io/terms-of-service)
-- [LinkedIn](https://www.linkedin.com/company/balena-io/)
 - [Changelog](https://github.com/balena-io/balena-cli/blob/master/CHANGELOG.md)
-- [Integrations](https://www.balena.io/partners)
-- [L L Ms Txt](https://docs.balena.io/llms.txt)
+- [Blog](https://blog.balena.io/)
+- [Terms of service](https://www.balena.io/terms-of-service)
+- [Privacy policy](https://www.balena.io/privacy-policy)
+- [Status](https://status.balena.io/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 44.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 45.3 |
+| Contract governance | 0.0 |
+| Operational transparency | 52.6 |
+| Developer ergonomics | 42.9 |
+| Access clarity | 44.7 |
+
+**Agent readiness 19.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/balena/](https://apis.io/providers/balena/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Balena: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/balena/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
